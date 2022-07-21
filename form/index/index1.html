@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+#username,#password{
+    width: 80%;
+    border-radius: 10px;
+    height: 40px;
+    margin: 5px;
+    padding: 5px;
+}
+
+#password{
+    margin-bottom: 20px;
+}
+
+button{
+    margin: 10px;
+    padding: 5px;
+    height: 40px;
+    width: 50%;
+    border-radius: 20px;
+    background-color: lightblue;
+    transition: transform 80ms ease-in;
+    text-transform: uppercase;
+}
+
+button:hover{
+    background-color: lightseagreen;
+}
+
+.div2form{
+    background-color: black;
+    margin: 0px;
+    padding: 20px;
+    height: 1600px;
+    font-family: 'Montserrat', sans-serif;
+    background-repeat: no-repeat;
+    background-image: url("https://cdn.pixabay.com/photo/2016/05/05/02/37/sunset-1373171__480.jpg");
+    background-blend-mode: lighten;
+    background-size: contain;
+}
+
+.form{
+    background-color: whitesmoke;
+    text-align: center;
+    margin: 200px;
+    margin-top: 100px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.div2form h1{
+    text-transform: capitalize;
+    margin-bottom: 80px;
+}
+
+h4{
+    text-transform: capitalize;
+    font-size: 20px;
+}
+
+#name,#email,#number{
+    width: 80%;
+    height: 40px;
+}
+
+#dateofbirth{
+    width: 40%;
+    height: 80px;
+    margin-bottom: 40px;
+}
+#designation{
+    width: 40%;
+    height: 30px;
+    text-align: center;
+}
+
+a{
+    color: #333;
+	font-size: 14px;
+	text-decoration: none;
+	margin: 15px 0;
+    border: 1px solid #DDDDDD;
+	border-radius: 50%;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0 5px;
+	height: 40px;
+	width: 40px;
+}
+
+.username,.password{
+    text-align: center;
+    border: 4px solid black;
+    width: 250px;
+    height: 30px;
+    margin: 5px;
+    margin-left: 300px;
+    padding: 5px;
+    padding-top: 2px;
+    border-radius: 20px;
+}
+
+#username1,#password1{
+    text-align: center;
+    padding: 2px;
+    font-size: 10px;
+
+}
+
+.div2form button{
+    margin-top: 20px;
+}
+
+.signin1 h4{
+    font-size: 15px;
+}
+
+.signin1 a:hover{
+    background-color: blue;
+}
+    </style>
+</head>
+<body>
+    <div class="div2form">
+    <form method="post" action="/" class="form">
+        <h1>
+            user details
+        </h1>
+        <h4>designation</h4>
+        <select id="designation" name="designation">
+            <option>--designation--</option>
+            <option>student</option>
+        </select>
+        <h4>name</h4>
+        <input type="text" placeholder="name" id="name" name="name">
+        <h4>email id</h4>
+        <input type="email" placeholder="email" id="email" name="email">
+        <h4>phone number</h4>
+        <input type="number" placeholder=" phone number" id="number" name="phone">
+        <h4>date of birth</h4>
+        <input type="date" id="dateofbirth" name="dateofbirth">
+        <h4>username</h4>
+        <div class="username">
+        <h4 id="username1">username</h4>
+        </div>
+        <h4>password</h4>
+        <div class="password">
+        <h4 id="password1">password</h4>
+        </div>
+        <br>
+        <button id="submit">submit</button>
+        <br>
+        <div class="signin1">
+        <h4>already a registered user,</h4><a onclick="login2()">login</a>
+        </div>
+    </form>
+    </div>
+    
+</body>
+</html>
